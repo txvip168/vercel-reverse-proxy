@@ -1,12 +1,5 @@
 {
-    "rewrites": [
-        { "source": "/ai", "destination": "https://api.openai.com" },
-        {
-            "source": "/:match*",
-            "destination": "https://api.openai.com/:match*"
-        }
-    ],
-    "github": {
-        "silent": true
-    }
+  "rewrites": [
+    {"source": "/(.*)", "destination": "https://github.com/$1"}
+  ]
 }
