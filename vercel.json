@@ -1,7 +1,5 @@
 {
   "rewrites": [
-    {"source": "/github/(.*)", "destination": "https://github.com/$1"}
     {"source": "/openai/(.*)", "destination": "https://chat.openai.com/$1"}
-
   ]
 }
