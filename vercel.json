@@ -3,5 +3,5 @@
     "rewrites": [
 
         { "source": "/(.*)", "destination": "https://chat.openai.com/$1" }
-
+]
 }
