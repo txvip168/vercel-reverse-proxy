@@ -1,7 +1,11 @@
 {
 
-    "rewrites": [
+  "rewrites": [
 
-        { "source": "/(.*)", "destination": "https://chat.openai.com/$1" }
-]
+    { "source": "/:match/:url*", "destination": "https://:match/:url*" },
+    { "source": "/:match/:url*/", "destination": "https://:match/:url*/" },
+    { "source": "/s/:match/:url*", "destination": "http://:match/:url*" },
+    { "source": "/s/:match/:url*/", "destination": "http://:match/:url*/" }
+  ]
+
 }
