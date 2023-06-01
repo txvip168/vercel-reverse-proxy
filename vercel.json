@@ -1,8 +1,23 @@
 {
+
     "rewrites": [
+
+        { "source": "/", "destination": "https://chat.openai.com" },
+
         {
+
             "source": "/:match*",
+
             "destination": "https://chat.openai.com/:match*"
+
         }
-    ]
+
+    ],
+
+    "github": {
+
+        "silent": true
+
+    }
+
 }
