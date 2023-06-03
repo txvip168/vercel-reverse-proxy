@@ -1,11 +1,7 @@
 {
-
   "rewrites": [
-    {"source": "/github.com/(.*)", "destination": "https://github.com/$1"},
-    { "source": "/:match/:url*", "destination": "https://:match/:url*" },
-    { "source": "/:match/:url*/", "destination": "https://:match/:url*/" },
+    {"source": "/(.*)", "destination": "https://github.com/$1"}
     { "source": "/s/:match/:url*", "destination": "http://:match/:url*" },
     { "source": "/s/:match/:url*/", "destination": "http://:match/:url*/" }
   ]
-
 }
